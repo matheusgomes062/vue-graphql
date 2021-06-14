@@ -7,24 +7,14 @@
     </li>
   </ul>
 </template>
-
 <script>
-import gql from 'graphql-tag';
-
-const query = gql`
-  query getRockets {
-    rockets {
-      id
-      name
-    }
-  }
-`;
+import { GET_ROCKETS } from '../queries'
 
 export default {
   apollo: {
     rockets: {
-      query
-    }
-  }
-};
+      query: GET_ROCKETS,
+    },
+  },
+}
 </script>

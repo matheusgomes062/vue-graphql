@@ -4,10 +4,10 @@
   </div>
 </template>
 <script>
-import RocketItem from '@/components/RocketItem.vue';
+import RocketItem from "@/components/RocketItem.vue"
 export default {
   components: {
     RocketItem
   }
-};
+}
 </script>
